@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.machine {
+    position: relative; /* pour que la lampe se place sur la machine */
+    width: 600px;       /* ou la taille de ton fond */
+    margin: auto;
+}
+
+
+.machine .fond {
+    width: 100%;
+    display: block;
+}
+.lampe {
+    position: absolute;  /* pas relative sinon elle reste dans le flux */
+    top: 0px;           /* ajuste selon ton design */
+    left: 0px;         /* ajuste selon ton design */
+    width: 600px;         /* taille correcte */
+    z-index: 10;         /* au-dessus du fond */
+}
+
+
+.roue {
+    position: absolute;
+    width: 60px; /* Ajuste selon la taille des trous */
+    height: 60px;
+}
+
+/* Positionne les roues exactement sur les trous */
+#roue1 {
+    top: 290px;  /* Ajuste ces valeurs */
+    left: 180px;
+}
+#roue2 {
+    top: 290px;
+    left: 245px;
+}
+#roue3 {
+    top: 290px;
+    left: 340px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #ffdd44;
+}
